@@ -1,0 +1,17 @@
+{% load static %}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Email</title>
+</head>
+<body>
+    <h1>Verify Your Email</h1>
+    <p>Hello {{ user.username }},</p>
+    <p>Thank you for signing up for our service. Please click the following link to activate your account:</p>
+    <a href="{{ activate_url }}">Activate My Account</a>
+    <p>If you did not sign up for our service, please ignore this email.</p>
+    <p>Thank you.</p>
+</body>
+</html>

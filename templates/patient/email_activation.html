@@ -1,0 +1,6 @@
+Hello {{ user.username }},
+ Please click on the link below to activate your account:
+ http://{{ domain }}{% url 'patient_activate_email' uidb64=uid token=token %}
+ Thank you.
+ Best regards,
+The Team

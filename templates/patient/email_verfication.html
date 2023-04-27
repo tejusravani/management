@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Activate Your Account</title>
+</head>
+<body>
+  <h2>Hi {{ user.first_name }},</h2>
+  <p>Thank you for joining our site! Please click on the link below to activate your account:</p>
+  <a href="{{ domain }}{% url 'activate-cust' uidb64=uid token=token %}">Activate Your Account</a>
+  <br>
+  <p>Thank you!</p>
+</body>
+</html>
